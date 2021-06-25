@@ -24,7 +24,7 @@ except:
 
 # Get prediction
 price = theta[1] + theta[0] * normalize(kms, data[:,0])
-print("Estimate price: " + str(price))
+print("Estimate price: " + str(int(price)))
 
 # Get linear values
 x = np.array(range(int(max(data[:,0]))))
